@@ -1,0 +1,19 @@
+{
+  "name": "reproxy",
+  "version": "1.0.0",
+  "description": "Simple mock proxy with URL-rewriting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expressjs",
+    "proxy"
+  ],
+  "author": "Konstantin Kitmanov <doctor.hogart@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "is-regex": "^1.0.3",
+    "request": "^2.67.0"
+  }
+}
