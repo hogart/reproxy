@@ -1,7 +1,7 @@
 {
-  "name": "reproxy",
-  "version": "1.0.0",
-  "description": "Simple mock proxy with URL-rewriting",
+  "name": "express-reproxy",
+  "version": "1.0.1",
+  "description": "Simple URL-rewriting proxy as express middleware",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

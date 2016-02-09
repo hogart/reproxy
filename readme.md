@@ -19,7 +19,7 @@ Config looks like following:
 ```js
 [
     [/\someEndpoint\/(.*)/, 'http://real-endpoint/api/$1'], // regexp and replacement string
-    [/\otherEndpoint\/(.*)/, (match, group1) => { return 'http://other-endpoint/' + group1.split('/').reverse().join('/'); }], // regexp and replacement function
+    [/\\otherEndpoint\/(.*)/, (match, group1) => { return 'http://other-endpoint/' + group1.split('/').reverse().join('/'); }], // regexp and replacement function
     ['/simpleString/', 'http://example.com'] // request will be made to `'http://example.com' + '/simpleString/'`;
 ]
 ```

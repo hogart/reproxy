@@ -27,6 +27,8 @@ function reproxy (app, config) {
             };
 
             req.pipe(request(requestOptions)).pipe(res);
-        })
+        });
     });
 }
+
+module.exports = reproxy;
