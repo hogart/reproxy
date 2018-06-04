@@ -13,9 +13,8 @@ function reproxy (app, config) {
         throw new TypeError('Config should be array');
     }
 
-    config.forEach((configLine) => {
-        const listen = configLine[0];
-        const redirect = configLine[1];
+    config.forEach(configLine => {
+        const [ listen, redirect ] = configLine;
 
         app.all(listen, (req, res) => {
             const url = isRegex(listen) ? req.originalUrl.replace(listen, redirect) : redirect + listen;
